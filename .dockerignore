@@ -1,0 +1,7 @@
+build/
+out/
+.vs/
+*.exe
+*.log
+CMakeCache.txt
+CMakeFiles/

@@ -1,0 +1,30 @@
+{
+    "configurations": [
+        {
+            "name": "x64-Debug",
+            "generator": "Ninja",
+            "configurationType": "Debug",
+            "inheritEnvironments": [ "msvc_x64_x64" ],
+            "buildRoot": "${projectDir}\\out\\build\\${name}",
+            "installRoot": "${projectDir}\\out\\install\\${name}",
+            "cmakeCommandArgs": "",
+            "buildCommandArgs": "",
+            "ctestCommandArgs": "",
+            "variables": [
+                {
+                    "name": "CMAKE_TOOLCHAIN_FILE",
+                    "value": "C:/dev/vcpkg/scripts/buildsystems/vcpkg.cmake"
+                },
+                {
+                    "name": "OpenCV_DIR",
+                    "value": "C:/dev/vcpkg/installed/x64-windows/share/opencv4"
+                },
+                {
+                    "name": "Protobuf_DIR",
+                    "value": "C:/dev/vcpkg/installed/x64-windows/share/protobuf"
+                }
+
+            ]
+        }
+    ]
+}
