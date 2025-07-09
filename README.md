@@ -2,17 +2,16 @@
 
 This is an object tracking system built for a technical challenge. It uses A*-like assignment search and generates frame-by-frame tracking and visualizations from JSON input.
 
-## 🔧 Requirements
+---
 
-- Docker
-- Input JSON in the expected format
+## 🚀 Run It Instantly (No Build Required)
 
-## 🚀 Run It (exact command)
-
-From a folder containing `input_data.json`:
+You can run this project using Docker without compiling anything:
 
 ```bash
-docker run -v $(pwd):/data tracking-solution \
+docker pull ghcr.io/robopuffin/tracking-solution:latest
+
+docker run -v $(pwd):/data ghcr.io/robopuffin/tracking-solution \
   --input /data/input_data.json \
   --output /data/tracking_output.json \
   --vis-dir /data/visualization
